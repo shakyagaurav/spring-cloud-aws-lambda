@@ -1,0 +1,14 @@
+server:
+  port: 9097
+spring:
+  application:
+    name: spring-cloud-aws-lambda
+
+  datasource:
+    url: jdbc:mysql://<RDS-CLUSTER>:<PORT>/<SCHEMA-OR-DATABASE-NAME>?useSSL=false&serverTimezone=UTC
+    username: <USERNAME>
+    password: <PASSWORD>
+
+  jpa:
+    hibernate:
+      ddl-auto: none
